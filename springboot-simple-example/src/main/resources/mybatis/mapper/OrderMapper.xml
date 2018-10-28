@@ -10,5 +10,11 @@
         <result property="createTime" column="createTime" jdbcType="BIGINT"/>
     </resultMap>
 
+    <insert id="insertOrder" useGeneratedKeys="true">
+        insert into orderinfo(orderNo,creatTime)
+        valus(#{orderinfo.orderNo},#{orderinfo.createTime})
+    </insert>
+
+
 
 </mapper>
