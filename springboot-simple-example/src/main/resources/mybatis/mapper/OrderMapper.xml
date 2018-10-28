@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hjq.springboot.springbootsimpleexample.dao.OrderMapper">
+    <!--开启二级缓存-->
+    <!--<cache/>-->
+
+    <resultMap id="goodsMap" type="com.hjq.springboot.springbootsimpleexample.model.OrderInfo">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="orderNo" column="orderNo" jdbcType="BIGINT"/>
+        <result property="createTime" column="createTime" jdbcType="BIGINT"/>
+    </resultMap>
+
+
+</mapper>
