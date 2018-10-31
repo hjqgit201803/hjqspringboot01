@@ -5,6 +5,15 @@ public class OrderInfo {
     private Long id;
     private Long orderNo;
     private Long createTime;
+    private float orderAmount;//订单金额
+
+    public float getOrderAmount() {
+        return orderAmount;
+    }
+
+    public void setOrderAmount(float orderAmount) {
+        this.orderAmount = orderAmount;
+    }
 
     public Long getId() {
         return id;
