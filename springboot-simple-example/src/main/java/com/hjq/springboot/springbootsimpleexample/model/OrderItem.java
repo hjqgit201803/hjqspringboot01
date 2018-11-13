@@ -2,7 +2,7 @@ package com.hjq.springboot.springbootsimpleexample.model;
 
 public class OrderItem {
 
-    private long itemId;
+    private long id;
 
     private long orderId;
 
@@ -12,12 +12,12 @@ public class OrderItem {
 
     private float orderGoodsNum;
 
-    public long getItemId() {
-        return itemId;
+    public long getId() {
+        return id;
     }
 
-    public void setItemId(long itemId) {
-        this.itemId = itemId;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getOrderId() {
