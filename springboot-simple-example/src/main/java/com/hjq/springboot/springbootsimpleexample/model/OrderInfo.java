@@ -1,10 +1,31 @@
 package com.hjq.springboot.springbootsimpleexample.model;
 
+import java.util.List;
+
 public class OrderInfo {
 
     private Long id;
     private Long orderNo;
     private Long createTime;
+    private float orderAmount;//????
+
+    private List<OrderItem> itemList;
+
+    public List<OrderItem> getItemList() {
+        return itemList;
+    }
+
+    public void setItemList(List<OrderItem> itemList) {
+        this.itemList = itemList;
+    }
+
+    public float getOrderAmount() {
+        return orderAmount;
+    }
+
+    public void setOrderAmount(float orderAmount) {
+        this.orderAmount = orderAmount;
+    }
 
     public Long getId() {
         return id;
